@@ -8,6 +8,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("length", type=int, help="How Long")
 parser.add_argument("--upper", action='store_true')
 parser.add_argument("--lower", action='store_true')
+parser.add_argument("--digits", action='store_true')
+parser.add_argument("--punctuation", action='store_true')
 
 args = parser.parse_args()
 
