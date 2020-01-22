@@ -14,6 +14,8 @@ args = parser.parse_args()
 length = args.length
 use_upper = args.upper
 use_lower = args.lower
+use_digits = args.digits
+use_punctuation = args.punctuation
 
 # use_digits = True
 # use_special = True
@@ -26,11 +28,11 @@ if use_upper:
 if use_lower:
     characters += string.ascii_lowercase
 
-# if use_digits:
-#     characters += string.digits
+if use_digits:
+    characters += string.digits
 
-# if use_special:
-#     characters += string.punctuation
+if use_punctuation:
+    characters += string.punctuation
 
 password = ''
 
